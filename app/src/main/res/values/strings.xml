@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Limetray Twitter Assignment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tw_login_hint">Twitter Login</string>
+    <string name="tw_logout_hint">Logout</string>
+    <string name="twitter_consumer_key">15FUSwjlqZ36sMa1H5sKY8oLa</string>
+    <string name="twitter_consumer_secret">lrqueefF8zJJL8dXpsfwEcP4cWHfcCNi7pToeHXG0d6ZGMRxOf</string>
+    <string name="twitter_access_token">1978708945-SUbQXRePYcTjv73nLsqMFKMmvOwbKw3QmY1hfAv</string>
+    <string name="twitter_token_secret">5K6xVYzH8PN7FiM9DfftvZlQM655auoRbo0LQDkKstAO9</string>
+    <string name="twitter_callback_url">http://www.iwillcode.com/auth/twitter/callback/</string>
+    <string name="welcome">Welcome back %s!</string>
+    <string name="already_logged">User already logged into twitter with %s.</string>
+    <string name="logged_out">Logout success</string>
+    <string name="loading_title">Loading…</string>
+    <string name="login_dialog_message">Wait for it…</string>
+    <string name="title_activity_login_to_twitter">LoginToTwitter</string>
+    <string name="title_activity_limetray_tweets">LimetrayTweets</string>
+    <string name="title_activity_limetray_graph">LimetrayGraph</string>
+
+</resources>
