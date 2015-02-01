@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import com.iwillcode.limetraytwitterassignment.R;
 import com.jjoe64.graphview.GraphView;
 
+import java.util.Date;
+
 public class LimetrayGraph extends Activity{
 
 
@@ -21,6 +23,14 @@ public class LimetrayGraph extends Activity{
         setContentView(R.layout.activity_limetray_graph);
     }
 
-
+    GraphView graphView = new LineGraphView(this, "TweetGraph") {
+        @Override
+        protected String formatLabel(double value, boolean isValueX) {
+            if (isValueX) {
+                // convert unix time to human time
+                return dateTimeFormatter.format(new Date((long) value*1000));
+            } else return super.formatLabel(value, isValueX); // let the y-value be normal-formatted
+        }
+    };
 
 }
