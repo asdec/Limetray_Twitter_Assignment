@@ -1,13 +1,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_900"
     tools:context="com.iwillcode.limetraytwitterassignment.LimetrayUI.LimetrayTweets">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Get Limetray Tweets"
+        android:id="@+id/searchLimetray"
 
+        android:background="@color/material_deep_teal_200"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:divider="@color/material_deep_teal_200"
+        android:dividerHeight="2dp"
+        android:background="@android:color/white"
         android:id="@+id/listView"
+        android:layout_above="@id/searchLimetray"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

@@ -1,3 +1,4 @@
+
 package com.iwillcode.limetraytwitterassignment.LimetrayUI;
 
 import android.app.Activity;
@@ -13,8 +14,7 @@ import com.jjoe64.graphview.GraphView;
 
 import java.util.Date;
 
-public class LimetrayGraph extends Activity{
-
+public class LimetrayGraph extends Activity {
 
 
     @Override
@@ -23,6 +23,8 @@ public class LimetrayGraph extends Activity{
         setContentView(R.layout.activity_limetray_graph);
     }
 
+}
+/*
     GraphView graphView = new LineGraphView(this, "TweetGraph") {
         @Override
         protected String formatLabel(double value, boolean isValueX) {
@@ -34,3 +36,4 @@ public class LimetrayGraph extends Activity{
     };
 
 }
+*/

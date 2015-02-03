@@ -1,10 +1,5 @@
 package com.iwillcode.limetraytwitterassignment;
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -20,10 +15,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.iwillcode.limetraytwitterassignment.LimetrayUI.LimetrayGraph;
 import com.iwillcode.limetraytwitterassignment.LimetrayUI.LimetrayTweets;
 import com.iwillcode.limetraytwitterassignment.Utilities.Constants;
 import com.iwillcode.limetraytwitterassignment.Utilities.SharedPreferencesHandler;
+
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
@@ -33,19 +30,13 @@ import twitter4j.auth.RequestToken;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
 
-/**
- * @author Octa
- */
+
 public class MainActivity extends Activity {
 
-    /**
-     * Class tag. Used for debug.
-     */
+
     private static final String TAG = MainActivity.class.getCanonicalName();
 
-    /**
-     * Instance of {@link twitter4j.Twitter}
-     */
+
     private static Twitter twitter;
 
     private Button loginBtn;
@@ -130,18 +121,13 @@ public class MainActivity extends Activity {
         getAccessTokenTask.execute(verifier);
     }
 
-    /**
-     * Check user already logged in your application using twitter Login flag is
-     * fetched from Shared Preferences
-     */
+
     private boolean isTwitterLoggedInAlready() {
         // return twitter login status from Shared Preferences
         return SharedPreferencesHandler.isTwitterLoggedInAlready(MainActivity.this);
     }
 
-    /**
-     * Login with Twitter.
-     */
+
     private class TwitterLoginTask extends AsyncTask<Void, Void, Void> {
 
         @Override
@@ -233,9 +219,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    /**
-     * Clear prefs and logout
-     */
+
     private void logout() {
         SharedPreferencesHandler.clearCredentials(MainActivity.this);
         if (twitter != null)
