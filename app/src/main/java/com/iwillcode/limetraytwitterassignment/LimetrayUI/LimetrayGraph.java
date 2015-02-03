@@ -40,7 +40,6 @@ public class LimetrayGraph extends Activity {
                 new DataPoint(3, 2),
                 new DataPoint(4, 6)
 
-
         });
 
 
