@@ -28,11 +28,13 @@
         </activity>
         <activity
             android:name=".LimetrayUI.LimetrayTweets"
-            android:label="@string/title_activity_limetray_tweets" >
+            android:label="@string/title_activity_limetray_tweets"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".LimetrayUI.LimetrayGraph"
-            android:label="@string/title_activity_limetray_graph" >
+            android:label="@string/title_activity_limetray_graph"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

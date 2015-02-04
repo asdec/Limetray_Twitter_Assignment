@@ -97,6 +97,8 @@ public class LimetrayTweets extends Activity {
                 Log.e("Error", "Exception");
             }
 
+            getCount();
+
             return tweetTexts;
         }
 
@@ -106,7 +108,7 @@ public class LimetrayTweets extends Activity {
             super.onPostExecute(result);
             ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(getBaseContext(), android.R.layout.simple_list_item_1, result);
             list.setAdapter(itemsAdapter);
-            getCount();
+
             Toast.makeText(LimetrayTweets.this, "Tweet searched ", Toast.LENGTH_SHORT).show();
 
         }
@@ -126,7 +128,9 @@ public class LimetrayTweets extends Activity {
 
     public int getCount()  {
 
-        return tweetTexts.size();
+        int countSize = tweetTexts.size();
+
+        return countSize;
 
     }
 
